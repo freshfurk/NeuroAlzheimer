@@ -1,6 +1,5 @@
 # NeuroAlzheimer
-Kontext des Projekts / Präsentationsrahmen
-Dieses Projekt entstand im Rahmen des Moduls Neuroengineering for Human-Centered Interaction an der Universität Duisburg-Essen (UDE), Studiengang Medizintechnik, Vertiefung Telemedizin, im Wintersemester 2025/2026.
+Dieses Projekt entstand im Rahmen des Moduls "Neuroengineering for Human-Centered Interaction" an der Universität Duisburg-Essen (UDE), Studiengang Medizintechnik, Vertiefung Telemedizin, im Wintersemester 2025/2026.
 
 Der Vortrag sowie die begleitende Implementierung orientieren sich an dem wissenschaftlichen Artikel:
 
@@ -33,8 +32,8 @@ Diese Merkmale werden in diesem Projekt ausgewertet, visualisiert und zur maschi
 ## Voraussetzungen  
 
 - Python 3.10 (oder kompatibel)  
-- Benötigte Python-Pakete: numpy, scipy, matplotlib, pandas, scikit-learn (oder wie in requirements.txt angegeben)  
-- EEG-Daten im passenden Format (je nachdem, wie dein Loader implementiert ist)
+- Benötigte Python-Pakete: numpy, scipy, matplotlib, pandas, scikit-learn  
+- EEG-Daten im passenden Format (je nachdem, wie der Loader implementiert ist)
 
 ## Projektstruktur
 
