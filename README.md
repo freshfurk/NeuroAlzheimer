@@ -1,41 +1,39 @@
 # NeuroAlzheimer
-Dieses Projekt entstand im Rahmen des Moduls "Neuroengineering for Human-Centered Interaction" an der Universität Duisburg-Essen (UDE), Studiengang Medizintechnik, Vertiefung Telemedizin, im Wintersemester 2025/2026.
+This project was developed as part of the "Neuroengineering for Human-Centered Interaction" module at the University of Duisburg-Essen (UDE)—within the Medical Engineering degree program, specializing in Telemedicine—during the 2025/2026 winter semester.
 
-Der Vortrag sowie die begleitende Implementierung orientieren sich an dem wissenschaftlichen Artikel:
+The presentation and the accompanying implementation are based on the following scientific article:
 
-„Correlation between cognitive brain function and electrical brain activity in patients with Alzheimer’s disease“
+"Correlation between cognitive brain function and electrical brain activity in patients with Alzheimer’s disease"
 
-## Überblick
-NeuroAlzheimer ist ein Python-Projekt zur Analyse von EEG-Signalen mit dem Ziel, potenzielle Biomarker für Alzheimer zu untersuchen. Im Fokus stehen Frequenzveränderungen und Verlust von neuronaler Synchronisation, wie sie in der Forschung häufig mit kognitiven Defiziten und Demenz assoziiert werden.
+## Overview
+NeuroAlzheimer is a Python-based project designed to analyze EEG signals with the aim of investigating potential biomarkers for Alzheimer's disease. It focuses on frequency changes and the loss of neuronal synchronization—phenomena frequently associated in research with cognitive deficits and dementia.
 
-Das Projekt extrahiert charakteristische EEG-Merkmale und nutzt diese für eine automatisierte Klassifikation zwischen gesunden und erkrankten Probanden.
+The project extracts characteristic EEG features and uses them to automatically classify subjects as either healthy or affected by the disease.
 
-## Wissenschaftlicher Hintergrund
-In zahlreichen Studien wurde gezeigt, dass Alzheimer-Patienten typische Veränderungen im EEG aufweisen, darunter:
+## Scientific Background
+Numerous studies have demonstrated that Alzheimer's patients exhibit typical EEG alterations, including:
 
-- Erhöhte Aktivität in niederfrequenten Bereichen wie Theta
-- Verminderte Aktivität im Alpha-Bereich
-- Veränderte Peak-Frequenz (Verschiebung zu langsameren Wellen)
-- Allgemeine Reduktion der kortikalen Konnektivität
+- Increased activity in low-frequency bands (such as the theta band)
+- Decreased activity in the alpha band
+- Altered peak frequency (a shift toward slower waves)
+- A general reduction in cortical connectivity
 
-Diese Merkmale werden in diesem Projekt ausgewertet, visualisiert und zur maschinellen Klassifikation genutzt.
+In this project, these features are analyzed, visualized, and utilized for automated classification. ## Features
 
-## Features  
+- Loading and preprocessing of EEG data
+- Calculation of band power across various frequency bands
+- Extraction of peak frequency in the alpha band
+- Visualization of results (histograms, bar charts, scatter plots)
+- Basic machine learning for classification (e.g., healthy vs. Alzheimer's)
+- Output of performance metrics (accuracy, confusion matrix, precision/recall/F1-score)
 
-- Laden und Vorverarbeiten von EEG-Daten  
-- Berechnung von Bandpower in verschiedenen Frequenzbändern  
-- Extraktion der Peak Frequency im Alpha-Band  
-- Visualisierung der Ergebnisse (Histogramme, Balkendiagramme, Scatterplots)  
-- Einfaches Machine Learning zur Klassifikation (z. B. gesund vs. Alzheimer)  
-- Ausgabe von Performance-Metriken (Accuracy, Konfusionsmatrix, Precision / Recall / F1-Score)  
+## Prerequisites
 
-## Voraussetzungen  
+- Python 3.10 (or compatible)
+- Required Python packages: numpy, scipy, matplotlib, pandas, scikit-learn
+- EEG data in the appropriate format (depending on the loader implementation)
 
-- Python 3.10 (oder kompatibel)  
-- Benötigte Python-Pakete: numpy, scipy, matplotlib, pandas, scikit-learn  
-- EEG-Daten im passenden Format (je nachdem, wie der Loader implementiert ist)
-
-## Projektstruktur
+## Project Structure
 
 ```text
 ├── data/
@@ -47,6 +45,7 @@ Diese Merkmale werden in diesem Projekt ausgewertet, visualisiert und zur maschi
 │       ├── sub-037_task-eyesclosed_eeg.set
 │       └── ...
 ├── paper/
-├── code.py                # Hauptskript
-├── presentation.pptx      # Präsentation (UDE)
-└── README.md              
+├── code.py                # Main script
+├── presentation.pptx      # Presentation (UDE)
+└── README.md
+```
